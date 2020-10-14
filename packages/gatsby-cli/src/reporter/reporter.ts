@@ -44,7 +44,7 @@ class Reporter {
    * the reporter to extend the internal error map
    */
 
-  setErrorMap = (entry: Record<ErrorId, IErrorMapEntry>): void => {
+  setErrorMap = (entry: Record<string, IErrorMapEntry>): void => {
     this.errorMap = {
       ...this.errorMap,
       ...entry,
