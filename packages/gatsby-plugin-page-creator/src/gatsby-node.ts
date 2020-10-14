@@ -186,7 +186,7 @@ export function setFieldsOnGraphQLNodeType({
     return {}
   } catch (e) {
     reporter.panic({
-      id: `1`,
+      id: `7`,
       context: {
         sourceMessage: e.message,
       },
@@ -207,6 +207,31 @@ export async function onPreInit(
       level: `ERROR`,
     },
     "2": {
+      text: (context): string => `PageCreator: ${context.sourceMessage}`,
+      type: `PLUGIN`,
+      level: `ERROR`,
+    },
+    "3": {
+      text: (context): string => `PageCreator: ${context.sourceMessage}`,
+      type: `PLUGIN`,
+      level: `ERROR`,
+    },
+    "4": {
+      text: (context): string => `PageCreator: ${context.sourceMessage}`,
+      type: `PLUGIN`,
+      level: `ERROR`,
+    },
+    "5": {
+      text: (context): string => `PageCreator: ${context.sourceMessage}`,
+      type: `PLUGIN`,
+      level: `ERROR`,
+    },
+    "6": {
+      text: (context): string => `PageCreator: ${context.sourceMessage}`,
+      type: `PLUGIN`,
+      level: `ERROR`,
+    },
+    "7": {
       text: (context): string => `PageCreator: ${context.sourceMessage}`,
       type: `PLUGIN`,
       level: `ERROR`,
